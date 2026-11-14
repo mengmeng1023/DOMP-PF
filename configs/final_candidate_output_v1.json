@@ -1,0 +1,40 @@
+{
+  "mechanism_version": "candidate-position-output-v1",
+  "status": "owner_confirmed",
+  "confirmed_on": "2026-10-16",
+  "plan_revision": "RP-0.137",
+  "entrypoint": "pf_tbd.candidate_position_output.step",
+  "config_class": "pf_tbd.candidate_closed_loop.Config",
+  "explicit_config_required": true,
+  "history_dispersion_enabled": true,
+  "source_code_commit": "c0d3dd17010f000399fffc522c3bef75daac8e81",
+  "evidence_experiment": "RD-PFTBD-S33-CANDIDATE-OUTPUT-20261016-001",
+  "engine": {
+    "seed": 7,
+    "K": 8,
+    "dual_enabled": true,
+    "total_particles": 500,
+    "position_sigma": 2.0,
+    "velocity_sigma": 0.001,
+    "amplitude_sigma": 0.01,
+    "dt": 1.0,
+    "sigma_c": 3.0,
+    "sigma_obs": 3.0,
+    "r": 5.0,
+    "Q_min": 0.02,
+    "M_min": 0.01,
+    "ess_fraction": 0.5
+  },
+  "terminology": {
+    "M": "Distance-Weighted Support",
+    "Q": "Local Support Mass"
+  },
+  "direct_output_actions": [
+    "single_update",
+    "confirm_H",
+    "promote_T"
+  ],
+  "otherwise": "unchanged stable output",
+  "observation_update": "existing selected-candidate likelihood update exactly once",
+  "coordinates": "continuous MATLAB1; subtract one only for source0 reporting"
+}

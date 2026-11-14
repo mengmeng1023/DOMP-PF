@@ -1,0 +1,42 @@
+{
+  "coordinate_origin": 0,
+  "seed": 7,
+  "sequences": [
+    {
+      "sequence": "data5",
+      "frames": 3000,
+      "initial_center_source0": [
+        71,
+        109
+      ],
+      "label_sha256": "527d2160ccecfdc4722be7b0381a5988b54adb41f315a9a8a7ca5b87ff5752a4"
+    },
+    {
+      "sequence": "data10",
+      "frames": 401,
+      "initial_center_source0": [
+        119,
+        90
+      ],
+      "label_sha256": "e80ebe6ac39eea0777c85fb72c16c3857e72e1d3f2169087afcf57f6beffaa09"
+    },
+    {
+      "sequence": "data18",
+      "frames": 500,
+      "initial_center_source0": [
+        71,
+        93
+      ],
+      "label_sha256": "8921d331b588452be7c7f6a05bd56dd4ece4b411046ea71474867833520e0997"
+    },
+    {
+      "sequence": "data20",
+      "frames": 400,
+      "initial_center_source0": [
+        122,
+        96
+      ],
+      "label_sha256": "bbfc117556b17e1dafd304f910bf08c1c1e851c55437a6212b4420aee83c51df"
+    }
+  ]
+}

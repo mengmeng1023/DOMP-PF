@@ -1,0 +1,26 @@
+DOMP-PF Submission Review License
+
+Copyright (c) 2026 the DOMP-PF authors. All rights reserved.
+
+Permission is granted to access, download and execute an unmodified copy of
+this author-provided software solely for peer review and verification of the
+results of the accompanying DOMP-PF manuscript. Installation of dependencies,
+use of the documented command-line/configuration interfaces, and generation
+of local evaluation outputs are permitted for that purpose.
+
+No permission is granted to modify the source code, prepare or distribute
+modified or derivative versions, redistribute the software outside the review
+process, or use it commercially, without prior written permission from the
+rights holders. Retain this notice with any permitted copy.
+
+This notice does not restrict rights required by applicable law or granted
+under the hosting platform's terms. Independently installed third-party
+dependencies remain subject to their own licenses; this notice does not
+relicense them. Datasets and separately supplied assets are not licensed by
+this source-code notice.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. TO THE EXTENT PERMITTED BY LAW, THE RIGHTS HOLDERS ARE NOT LIABLE FOR
+CLAIMS OR DAMAGES ARISING FROM ITS USE.
+
+Permission requests: Huanyu Yang <yhy@njust.edu.cn>

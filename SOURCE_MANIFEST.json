@@ -1,0 +1,100 @@
+{
+  "release": "2026-11-14",
+  "algorithm": "candidate-position-output-v1",
+  "frontend": "S11 dense objectness, DeeperUNet",
+  "source_commit": "095016f6d5e49d0c4f0f83cc05ca042544b17162",
+  "algorithm_validation_commit": "c0d3dd17010f000399fffc522c3bef75daac8e81",
+  "frontend_commit": "aec63f93367bfd2f8255493d0660d8820a9fadf6",
+  "verbatim_source_files": {
+    "src/pf_tbd/__init__.py": {
+      "source": "src/pf_tbd/__init__.py",
+      "source_family": "main",
+      "sha256": "7e8b18fda7eadc776ac3696c7269744ea529bac662781baedfe6c5948b13a925"
+    },
+    "src/pf_tbd/core.py": {
+      "source": "src/pf_tbd/core.py",
+      "source_family": "main",
+      "sha256": "2707bc92ea4a092d06af13cd50a6176bf8647da9a8082e448b8694d635706cc3"
+    },
+    "src/pf_tbd/candidate_closed_loop.py": {
+      "source": "src/pf_tbd/candidate_closed_loop.py",
+      "source_family": "main",
+      "sha256": "5a37e57e6968767069177fc173d822f05cca1579760cefac4f6dd3bc47f69420"
+    },
+    "src/pf_tbd/history_dispersion_guard.py": {
+      "source": "src/pf_tbd/history_dispersion_guard.py",
+      "source_family": "main",
+      "sha256": "12d684c238814145a2a4db49530560d3008be502fbe2e0365d1275b917b6e7f2"
+    },
+    "src/pf_tbd/candidate_position_output.py": {
+      "source": "src/pf_tbd/candidate_position_output.py",
+      "source_family": "main",
+      "sha256": "0e862c3194ecbc870aeaf3849a91d47008f204745b135ec344e841928ecd7012"
+    },
+    "src/deep_observation/inference.py": {
+      "source": "src/deep_observation/inference.py",
+      "source_family": "main",
+      "sha256": "45ec77ebaa1c3b8115a661d4e884bc1846742446ec3345389f3a9d7d7dfb46cb"
+    },
+    "src/deep_observation/models/deeper_unet.py": {
+      "source": "src/deep_observation/models/deeper_unet.py",
+      "source_family": "main",
+      "sha256": "01aae962728267f1e0a493c2bb019c887b92a32045ee59fb5bd607ddbf92c7f0"
+    },
+    "src/deep_observation/models/shallow_unet.py": {
+      "source": "src/deep_observation/models/shallow_unet.py",
+      "source_family": "main",
+      "sha256": "f9142ecbbbe47638f29e99da13303d4f2b95109ff39bfa3629f643ba54218ada"
+    },
+    "scripts/evaluate_tracking.py": {
+      "source": "scripts/evaluate_tracking.py",
+      "source_family": "main",
+      "sha256": "1e9725d8a493a901d0462ec271943d50de71517fdf154e602658620492c2b98e"
+    },
+    "scripts/movingtarget_data.py": {
+      "source": "scripts/movingtarget_data.py",
+      "source_family": "main",
+      "sha256": "9881b615fa24053b6a08ad2fa82420b89675e395ad94b5ceca1f2c1cb96126ea"
+    },
+    "tests/test_candidate_position_output.py": {
+      "source": "tests/test_candidate_position_output.py",
+      "source_family": "main",
+      "sha256": "7fb20f83fd9d752af27ddc57b567cb05fdbc11fbf45f299f6fc933354bc60560"
+    },
+    "tests/test_candidate_closed_loop.py": {
+      "source": "tests/test_candidate_closed_loop.py",
+      "source_family": "main",
+      "sha256": "c458519ac0d885c3b07cd70fcb2fb45c9ce7dbae31bd7f7352e6694d01f93587"
+    },
+    "tests/test_history_dispersion_guard.py": {
+      "source": "tests/test_history_dispersion_guard.py",
+      "source_family": "main",
+      "sha256": "3284953e604050cbe4fe21112ccb8d8663d565a182ffd14df2a9a77a4f988ba3"
+    },
+    "tests/test_candidate_radius_gate.py": {
+      "source": "tests/test_candidate_radius_gate.py",
+      "source_family": "main",
+      "sha256": "e848a1afa219063ac0d997fad4017aa7d0f4931efdff0d4641acfa3ad65bcb5f"
+    },
+    "tests/test_evaluate_tracking.py": {
+      "source": "tests/test_evaluate_tracking.py",
+      "source_family": "main",
+      "sha256": "92309860775650adfeb12408cac799b2659a1d2f3f5d0c8912c35261998ea79b"
+    },
+    "configs/final_candidate_output_v1.json": {
+      "source": "configs/final_candidate_output_v1.json",
+      "source_family": "main",
+      "sha256": "ea90062392dc1910cae0b13f5ee69ec450064a09977d04db91157afdbf93abdb"
+    },
+    "src/deep_observation/dense_objectness.py": {
+      "source": "src/deep_observation/dense_objectness.py",
+      "source_family": "S11",
+      "sha256": "1be4fe005d0314c5765ce413953196fa31b6ce6f81e49db9446d8f9ce989d223"
+    }
+  },
+  "packaging_changes": [
+    "Minimal deep_observation package initializers omit unrelated models.",
+    "Portable tracking/evaluation CLI added; core algorithms are copied without edits."
+  ],
+  "research_evidence": "Four MovingTarget development sequences, seed 7; initialization frame excluded; sequence-wise macro averages."
+}

@@ -1,0 +1,2 @@
+# Recorded PyTorch version; choose CPU/CUDA wheels for your platform.
+torch==2.13.0

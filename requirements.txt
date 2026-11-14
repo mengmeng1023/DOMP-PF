@@ -1,0 +1,5 @@
+# Versions used in the recorded research environment (Python 3.11).
+# Install a platform-appropriate PyTorch build separately; see README.
+numpy==2.4.6
+scipy==1.17.1
+Pillow==12.3.0
